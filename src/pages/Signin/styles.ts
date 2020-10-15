@@ -10,11 +10,11 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: flex;
-    place-content: center;
     flex-direction: column;
-    width: 100%100vh;
+    width: 100%;
     max-width: 700px;
     align-items: center;
+    place-content: center;
 
     form {
         margin: 80px 0;
@@ -23,23 +23,6 @@ export const Content = styled.div`
 
         h1 {
             margin-bottom: 24px;
-        }
-        
-        input {
-            background: #232129;
-            border-radius: 10px;
-            border: 2px solid #232129;
-            padding: 16px;
-            width: 100%;
-            color: #f4ede8;
-
-            &::placeholder {
-                color: #666360;
-            }
-
-            & + input {
-                margin-top: 8px;
-            }
         }
 
         button {
