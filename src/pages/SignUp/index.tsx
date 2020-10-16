@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiArrowLeft, FiMail, FiLock, FiUser } from 'react-icons/fi';
 import { Form } from '@unform/web';
+import * as Yup from 'yup';
 
 import logoImg from '../../assets/logo.svg';
 import { Container, Content, Background } from './styles';
@@ -11,7 +12,15 @@ import Button from '../../components/Button';
 const SignUp: React.FC = () => {
 
     function handleSubmit(data: object): void {
-        console.log(data);
+        try {
+            const schema = Yup.object().shape({
+                name: Yup.string().required(),
+                email: '',
+                password: ''
+            })
+        } catch (err) {
+
+        }
     }
 
     return (
