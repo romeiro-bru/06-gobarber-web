@@ -53,6 +53,7 @@ export const Container = styled.div<ContainerProps>`
 
 export const Error = styled.div`
     height: 20px;
+    margin-left: 16px;
     svg {
         margin: 0;
     }
