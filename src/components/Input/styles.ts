@@ -21,7 +21,7 @@ export const Container = styled.div<ContainerProps>`
     & + div {
         margin-top: 8px;
     }
-    
+
     ${(props) => props.isErrored && css`
         border-color: #c53030;        
     `}
@@ -48,5 +48,12 @@ export const Container = styled.div<ContainerProps>`
 
     svg {
         margin-right: 16px;
+    }
+`;
+
+export const Error = styled.div`
+    height: 20px;
+    svg {
+        margin: 0;
     }
 `;
