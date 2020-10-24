@@ -5,7 +5,7 @@ import { FormHandles } from '@unform/core';
 
 import * as Yup from 'yup';
 
-import { useAuth } from '../../hooks/AuthContext';
+import { useAuth } from '../../hooks/auth';
 import getValidationsErrors from '../../utils/getValidationErrors';
 import logoImg from '../../assets/logo.svg';
 import { Container, Content, Background } from './styles';
