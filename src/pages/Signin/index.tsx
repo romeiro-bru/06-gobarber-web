@@ -5,6 +5,7 @@ import { FormHandles } from '@unform/core';
 
 import * as Yup from 'yup';
 
+import { useToast } from '../../hooks/toast';
 import { useAuth } from '../../hooks/auth';
 import getValidationsErrors from '../../utils/getValidationErrors';
 import logoImg from '../../assets/logo.svg';
