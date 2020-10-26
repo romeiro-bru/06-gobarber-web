@@ -4,6 +4,7 @@ import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core'; 
 
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
 import { useToast } from '../../hooks/toast';
 import { useAuth } from '../../hooks/auth';
@@ -71,10 +72,10 @@ const SignIn: React.FC = () => {
 
                     <a href="forgot">Esqueci minha senha</a>              
                 </ Form>
-                <a href="login">
+                <Link to="/signup">
                     <FiLogIn />
                     Criar conta
-                </a>
+                </Link>
             </Content>
             <Background />
         </Container>
