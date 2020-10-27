@@ -5,6 +5,7 @@ import { Form } from '@unform/web';
 import * as Yup from 'yup';
 
 import { Link } from 'react-router-dom';
+import api from '../../services/api';
 import getValidationsErrors from '../../utils/getValidationErrors' ;
 
 import logoImg from '../../assets/logo.svg';
