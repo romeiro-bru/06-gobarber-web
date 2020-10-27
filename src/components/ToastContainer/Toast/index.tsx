@@ -31,7 +31,7 @@ interface ToastProps {
     return (
       <Container
         type={message.type}
-        $hasDescription={!!message.description}
+        hasDescription={!!message.description}
         style={style}
       >
         {icons[message.type || 'info']}
